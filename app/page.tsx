@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const HEARTBEAT_INTERVAL = 10_000;
@@ -160,6 +161,18 @@ export default function Home() {
           )}
         </section>
 
+        <section className="flex items-center justify-between gap-4 rounded-lg bg-white px-4 py-4 shadow-sm dark:bg-zinc-900">
+          <div>
+            <p className="text-lg font-medium text-black dark:text-zinc-50">MBTI 分析</p>
+            <p className="text-zinc-600 dark:text-zinc-400">描述你的個性，讓 AI 猜猜你的 MBTI</p>
+          </div>
+          <Link
+            href="/mbti"
+            className="shrink-0 rounded-lg bg-black px-5 py-2 font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-black dark:hover:bg-zinc-300"
+          >
+            前往
+          </Link>
+        </section>
       </main>
     </div>
   );
