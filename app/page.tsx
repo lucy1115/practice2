@@ -173,6 +173,19 @@ export default function Home() {
             前往
           </Link>
         </section>
+
+        <section className="flex items-center justify-between gap-4 rounded-lg bg-white px-4 py-4 shadow-sm dark:bg-zinc-900">
+          <div>
+            <p className="text-lg font-medium text-black dark:text-zinc-50">禮物推薦</p>
+            <p className="text-zinc-600 dark:text-zinc-400">選擇收禮者的條件，讓 AI 推薦送什麼</p>
+          </div>
+          <Link
+            href="/gift"
+            className="shrink-0 rounded-lg bg-black px-5 py-2 font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-black dark:hover:bg-zinc-300"
+          >
+            前往
+          </Link>
+        </section>
       </main>
     </div>
   );
